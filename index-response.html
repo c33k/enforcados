@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ENFORCADOS</title>
+    <title>ENFORCADOS - OBRIGADO!</title>
 
     <!-- Bootstrap core CSS -->
     <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
   <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
-        <span>EM BREVE!</span> Inscreva-se!
+        <span>OBRIGADO</span> por se inscrever!
       </div>
     </div>
 
@@ -38,10 +38,10 @@
           com o nosso link. Obrigado!
           </p>
           <div class="social-icons col-xs-12">
-            <a href="https://twitter.com/home?status=Inscreva-se%20para%20acompanhar%20as%20novidades%20do%20livro%20%23ENFORCADOS,%20do%20autor%20Rafael%20L.%20Toscano.%20http://c33k.github.io" target="_blank">
+            <a href="http://www.twitter.com/toscanorl">
               <img src="assets/images/twitter-ad87sdga8dbad0837803bfa0987bda0897.png">
             </a>
-              <a href="https://www.facebook.com/sharer/sharer.php?u=c33k.github.io" target="_blank">
+              <a href="https://www.facebook.com/sharer/sharer.php?u=c33k.github.io"><!--<a href="http://www.facebook.com/rafaelltoscano">-->
               <img src="assets/images/facebook-685ce937b70684ff44afb33632b4d807.png">
             </a>
           </div>
@@ -51,24 +51,6 @@
     </div>
 
     <section class="row progress-container">
-      <form class="form-horizontal container" role="form" method="post" enctype="multipart/form-data" action="http://pub8.bravenet.com/emailfwd/senddata.php" accept-charset="utf-8">
-        <input type="hidden" name="usernum" value="626618603">
-        <input type="hidden" name="cpv" value="2">
-        <!-- DO NOT CHANGE OR REMOVE THE 3 TAGS ABOVE THIS COMMENT-->
-        <div class="form-group">
-          <label for="xmail" class="col-sm-4 control-label">Digite o seu e-mail:</label>
-          <div class="col-sm-4">
-            <input type="email" class="form-control" id="xmail" name="xmail" placeholder="exemplo@email.com" data-container="body" data-toggle="popover" data-placement="bottom" title="ATENÇÃO!" data-content="Ao enviar, você será redirecionado para a página
-de confirmação. Favor, clicar em 'CONTINUE' e depois em 'RETURN TO WEBSITE'.">
-          </div>
-          <div class="col-sm-2 col-sm-10">
-            <button type="submit" class="btn btn-default">Enviar</button>
-            <button type="reset" class="btn btn-default">Limpar</button>
-          </div>
-          <div id="input"></div>
-        </div>
-      </form>
-
       <ul>
         <li id="writing"></li>
         <li id="revising"></li>
@@ -76,38 +58,14 @@ de confirmação. Favor, clicar em 'CONTINUE' e depois em 'RETURN TO WEBSITE'.">
         <li id="imprimindo"></li>
         <li id="publicando"></li>
       </ul>
-
-      <!-- <div id="crazybox" style="position: absolute; width: 400px; height: 400px; background-color: red;"></div> -->
     </section>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-
-    <script type="text/javascript">
-      var firstTime = true;
-
-      function timeoutRefresher () {
-        setTimeout( function () {
-          firstTime = true;
-        }, 20000);
-      }
-
-      $( "#xmail" ).keypress(function() {
-        if ( firstTime ) {
-          firstTime = false;
-          $('#xmail').popover('show');
-
-          setTimeout( function() {
-            $('#xmail').popover('hide');
-            timeoutRefresher();
-          }, 7000);
-        }
-      });
-    </script>
 
   </body>
 </html>
