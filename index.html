@@ -51,21 +51,37 @@
     </div>
 
     <section class="row progress-container">
-      <form class="form-horizontal container" role="form" method="post" enctype="multipart/form-data" action="http://pub8.bravenet.com/emailfwd/senddata.php" accept-charset="utf-8">
-        <input type="hidden" name="usernum" value="626618603">
-        <input type="hidden" name="cpv" value="2">
-        <!-- DO NOT CHANGE OR REMOVE THE 3 TAGS ABOVE THIS COMMENT-->
+      <form class="form-horizontal container" role="form" method="post" action="http://pub8.bravenet.com/elist/add.php">
+        <!-- <input type="hidden" name="usernum" value="626618603">
+        <input type="hidden" name="cpv" value="2"> -->
         <div class="form-group">
-          <label for="xmail" class="col-sm-4 control-label">Digite o seu e-mail:</label>
+          <label for="elistname" class="col-sm-4 control-label">Nome:</label>
           <div class="col-sm-4">
-            <input type="email" class="form-control" id="xmail" name="xmail" placeholder="exemplo@email.com" data-container="body" data-toggle="popover" data-placement="bottom" title="ATENÇÃO!" data-content="Ao enviar, você será redirecionado para a página
-de confirmação. Favor, clicar em 'CONTINUE' e depois em 'RETURN TO WEBSITE'.">
+            <input type="text" class="form-control" id="elistname" name="ename" placeholder="Seu nome..." data-container="body">
           </div>
-          <div class="col-sm-2 col-sm-10">
+        </div>
+
+        <div class="form-group">
+          <label for="emailaddress" class="col-sm-4 control-label">E-mail:</label>
+          <div class="col-sm-4">
+            <input type="email" class="form-control" id="elistaddress93909811228" name="emailaddress" placeholder="exemplo@email.com" data-container="body" data-toggle="popover" data-placement="bottom" title="ATENÇÃO!" data-content="Ao enviar, você será redirecionado para a página
+de confirmação. Favor, clicar em 'CONTINUE' e depois em 'RETURN TO WEBSITE'.">
+
+            <input type="hidden" name="usernum" style="border: 0px solid black; height: 0px; width: 0px;" value="626618603"><input type="hidden" name="cpv"  style="border: 0px solid black; height: 0px; width: 0px;"  value="1">
+
+          </div>
+
+          <!-- <div id="input"></div> -->
+        </div>
+        <div class="form-group">
+          <div class="col-sm-12 opcoes" style="text-align: center">
+            <span><input type="radio" name="action" value="join" checked style="border: 0px;">Inscrever-se</span>
+            <span><input type="radio" name="action" value="leave" style="border: 0px;">Deixar a Lista</span>
+          </div>
+          <div class="col-sm-12" style="text-align: center">
             <button type="submit" class="btn btn-default">Enviar</button>
             <button type="reset" class="btn btn-default">Limpar</button>
           </div>
-          <div id="input"></div>
         </div>
       </form>
 
@@ -96,13 +112,13 @@ de confirmação. Favor, clicar em 'CONTINUE' e depois em 'RETURN TO WEBSITE'.">
         }, 20000);
       }
 
-      $( "#xmail" ).keypress(function() {
+      $( "#elistaddress93909811228" ).keypress(function() {
         if ( firstTime ) {
           firstTime = false;
-          $('#xmail').popover('show');
+          $('#elistaddress93909811228').popover('show');
 
           setTimeout( function() {
-            $('#xmail').popover('hide');
+            $('#elistaddress93909811228').popover('hide');
             timeoutRefresher();
           }, 7000);
         }
